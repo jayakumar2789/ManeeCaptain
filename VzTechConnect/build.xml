@@ -27,6 +27,9 @@
 
 	<target name="war" depends="junit">
 		<war destfile="dist/VzTechConnect.war" webxml="WebContent/WEB-INF/web.xml" >
+		<fileset dir="WebContent">
+                <include name="**/*.*"/>
+            </fileset>
 		</war>
 	</target>
 
